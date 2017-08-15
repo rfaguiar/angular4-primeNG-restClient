@@ -18,9 +18,10 @@
           name="vencimento"
           ngModel #vencimento="ngModel"
           required></p-calendar>
-
+<!--
         <app-message [control]="vencimento" error="required"
           text="Informe uma data de vencimento"></app-message>
+          -->
       </div>
 
       <div class="ui-g-6 ui-md-3 ui-fluid">
@@ -35,12 +36,13 @@
           name="descricao"
           ngModel #descricao="ngModel"
           required minlength="5">
-
+<!--
           <app-message [control]="descricao" error="required"
             text="Informe uma descrição"></app-message>
           <app-message [control]="descricao" error="minlength"
             text="Mínimo de {{ descricao.errors?.minlength?.requiredLength }} caracteres"></app-message>
-      </div>
+      -->
+          </div>
 
       <div class="ui-g-12 ui-md-3 ui-fluid">
         <label>Valor</label>
@@ -50,9 +52,10 @@
           name="valor"
           ngModel #valor="ngModel"
           required>
-
+<!--
         <app-message [control]="valor" error="required"
           text="Informe um valor"></app-message>
+          -->
       </div>
 
       <div class="ui-g-12 ui-md-6 ui-fluid">
