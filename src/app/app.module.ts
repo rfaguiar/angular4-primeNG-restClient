@@ -22,6 +22,8 @@ import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.co
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { MessageComponent } from './message/message.component';
+import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
+import { LancamentoGridComponent } from './lancamento-grid/lancamento-grid.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { MessageComponent } from './message/message.component';
     PessoasPesquisaComponent,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    MessageComponent
+    MessageComponent,
+    PessoaGridComponent,
+    LancamentoGridComponent
   ],
   imports: [
     BrowserModule,
