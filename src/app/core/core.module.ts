@@ -1,3 +1,4 @@
+import { CategoriaService } from './../categorias/categoria.service';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -29,7 +30,8 @@ import { LancamentoService } from './../lancamentos/lancamento.service';
     PessoaService,
     ConfirmationService,
     { provide: LOCALE_ID, useValue: 'pt-BR' },
-    ErrorHandlerService
+    ErrorHandlerService,
+    CategoriaService
   ]
 })
 export class CoreModule { }
