@@ -15,10 +15,18 @@
 
       <div class="ui-g-12">
         <label style="display: block">Vencimento</label>
-        <input pInputText type="text" style="width: 95px">
+        <p-calendar dateFormat="dd/mm/yy"
+          [inputStyle]="{width: '95px'}"
+          name="vencimentoInicio"
+          [(ngModel)]="dataVencimentoInicio">
+        </p-calendar>
 
         <label>Até</label>
-        <input pInputText type="text" style="width: 95px">
+        <p-calendar dateFormat="dd/mm/yy"
+          [inputStyle]="{width: '95px'}"
+          name="vencimentoFim"
+          [(ngModel)]="dataVencimentoFim">
+        </p-calendar>
       </div>
 
       <div class="ui-g-12">
@@ -28,7 +36,7 @@
   </div>
   <div class="ui-g">
     <div class="ui-g-12">
-      <p-dataTable [value]="lancamentos" [paginator]="true" [rows]="2" [responsive]="true">
+      <p-dataTable [value]="lancamentos" [paginator]="true" [rows]="2" [responsive]="true" emptyMessage="Nenhum lançamento encontrado">
         <p-column field="pessoa" header="Pessoa"></p-column>
         <p-column field="descricao" header="Descrição"></p-column>
         <p-column header="Vencimento" styleClass="col-data">
