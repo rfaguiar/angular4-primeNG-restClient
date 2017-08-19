@@ -32,7 +32,8 @@
         <p-column field="ativo" header="Status" styleClass="col-valor">
           <ng-template let-pes="rowData" pTemplate="body">
             <a href="javascript:;" [pTooltip]="pes.ativo ? 'Desativar' : 'Ativar'"
-                    tooltipPosition="top">
+                    tooltipPosition="top"
+                    (click)="alternarStatus(pes)">
                   {{ pes.ativo ? 'Ativo' : 'Inativo' }}
             </a>
           </ng-template>
