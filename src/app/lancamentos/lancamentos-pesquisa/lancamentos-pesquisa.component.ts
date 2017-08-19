@@ -60,6 +60,7 @@ export class LancamentosPesquisaComponent implements OnInit {
         }
 
         this.toasty.success('Lançamento excluído com sucesso!');
-      });
+      })
+      .catch(erro => this.errorHandler.handle(erro));
   }
 }
