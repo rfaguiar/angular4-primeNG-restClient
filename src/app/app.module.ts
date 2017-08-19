@@ -6,7 +6,7 @@ import { LancamentosModule } from './lancamentos/lancamentos.module';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { ToastyModule } from 'ng2-toasty';
@@ -34,7 +34,8 @@ import { AppComponent } from './app.component';
   providers: [
     LancamentoService,
     PessoaService,
-    ConfirmationService
+    ConfirmationService,
+    { provide: LOCALE_ID, useValue: 'pt-BR' }
   ],
   bootstrap: [AppComponent]
 })
