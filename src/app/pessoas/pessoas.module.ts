@@ -1,5 +1,4 @@
 import { SharedModule } from './../shared/shared.module';
-import { PessoaGridComponent } from './pessoa-grid/pessoa-grid.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 
@@ -28,8 +27,7 @@ import {TooltipModule} from 'primeng/components/tooltip/tooltip';
   ],
   declarations: [
     PessoaCadastroComponent,
-    PessoasPesquisaComponent,
-    PessoaGridComponent
+    PessoasPesquisaComponent
   ],
   exports: [
     PessoaCadastroComponent,
