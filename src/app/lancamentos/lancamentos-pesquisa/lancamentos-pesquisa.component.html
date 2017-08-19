@@ -10,7 +10,7 @@
       <div class="ui-g-12 ui-fluid">
         <label>Descrição</label>
         <input pInputText type="text" name="descricao"
-          [(ngModel)]="descricao">
+          [(ngModel)]="filtro.descricao">
       </div>
 
       <div class="ui-g-12">
@@ -18,14 +18,14 @@
         <p-calendar dateFormat="dd/mm/yy"
           [inputStyle]="{width: '95px'}"
           name="vencimentoInicio"
-          [(ngModel)]="dataVencimentoInicio">
+          [(ngModel)]="filtro.dataVencimentoInicio">
         </p-calendar>
 
         <label>Até</label>
         <p-calendar dateFormat="dd/mm/yy"
           [inputStyle]="{width: '95px'}"
           name="vencimentoFim"
-          [(ngModel)]="dataVencimentoFim">
+          [(ngModel)]="filtro.dataVencimentoFim">
         </p-calendar>
       </div>
 
@@ -36,7 +36,7 @@
   </div>
   <div class="ui-g">
     <div class="ui-g-12">
-      <p-dataTable [value]="lancamentos" [paginator]="true" [rows]="2" [responsive]="true" emptyMessage="Nenhum lançamento encontrado">
+      <p-dataTable [value]="lancamentos" [paginator]="true" [rows]="5" [responsive]="true" emptyMessage="Nenhum lançamento encontrado">
         <p-column field="pessoa" header="Pessoa"></p-column>
         <p-column field="descricao" header="Descrição"></p-column>
         <p-column header="Vencimento" styleClass="col-data">
