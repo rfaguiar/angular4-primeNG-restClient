@@ -1,3 +1,4 @@
+import { AuthService } from './../seguranca/auth.service';
 import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { CategoriaService } from './../categorias/categoria.service';
@@ -36,7 +37,8 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     Title,
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     ErrorHandlerService,
-    CategoriaService
+    CategoriaService,
+    AuthService
   ]
 })
 export class CoreModule { }
