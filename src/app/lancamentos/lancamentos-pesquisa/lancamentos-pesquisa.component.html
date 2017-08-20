@@ -67,7 +67,7 @@
             </a>
             <button pButton icon="fa-trash" pTooltip="Excluir" tooltipPosition="top"
               (click)="confirmarExclusao(lanc)"
-              [disable]="!auth.temPermissao('ROLE_REMOVER_LANCAMENTO')"></button>
+              [disabled]="!auth.temPermissao('ROLE_REMOVER_LANCAMENTO')"></button>
           </ng-template>
         </p-column>
       </p-dataTable>

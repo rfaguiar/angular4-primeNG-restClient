@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 import { MoneyHttp } from './money-http';
 import { Http, RequestOptions } from '@angular/http';
@@ -37,7 +38,8 @@ export function authHttpServiceFactory(auth: AuthService, http: Http, options: R
       provide: AuthHttp,
       useFactory: authHttpServiceFactory,
       deps: [AuthService, Http, RequestOptions]
-    }
+    },
+    AuthGuard
   ]
 })
 export class SegurancaModule { }
