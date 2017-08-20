@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { CategoriaService } from './../categorias/categoria.service';
 import { NgModule, LOCALE_ID } from '@angular/core';
@@ -32,6 +33,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     LancamentoService,
     PessoaService,
     ConfirmationService,
+    Title,
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     ErrorHandlerService,
     CategoriaService
