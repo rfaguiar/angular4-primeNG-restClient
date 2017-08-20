@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { SharedModule } from './../shared/shared.module';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
@@ -21,6 +22,7 @@ import {CurrencyMaskModule} from 'ng2-currency-mask';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
 
     SharedModule,
 
