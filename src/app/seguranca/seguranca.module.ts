@@ -1,3 +1,4 @@
+import { LogoutService } from './logout.service';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 import { MoneyHttp } from './money-http';
@@ -39,7 +40,8 @@ export function authHttpServiceFactory(auth: AuthService, http: Http, options: R
       useFactory: authHttpServiceFactory,
       deps: [AuthService, Http, RequestOptions]
     },
-    AuthGuard
+    AuthGuard,
+    LogoutService
   ]
 })
 export class SegurancaModule { }

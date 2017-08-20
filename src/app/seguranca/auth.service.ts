@@ -62,6 +62,11 @@ export class AuthService {
       });
   }
 
+  limparAccessToken() {
+    localStorage.removeItem('token');
+    this.jwtPayload = null;
+  }
+
   isAccessTokenInvalido() {
     const token = localStorage.getItem('token');
     return !token || this.jwtHelper.isTokenExpired(token);
@@ -72,8 +77,8 @@ export class AuthService {
   }
 
   temQualquerPermissao(roles) {
-    for(const role of roles) {
-      if (this.temPermissao(role)){
+    for (const role of roles) {
+      if (this.temPermissao(role)) {
         return true;
       }
       return false;
