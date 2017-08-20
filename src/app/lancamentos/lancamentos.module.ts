@@ -1,4 +1,4 @@
-import { RouterModule } from '@angular/router';
+import { LancamentosRoutingModule } from './lancamentos-routing.module';
 import { SharedModule } from './../shared/shared.module';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
@@ -22,7 +22,6 @@ import {CurrencyMaskModule} from 'ng2-currency-mask';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule,
 
     SharedModule,
 
@@ -35,7 +34,9 @@ import {CurrencyMaskModule} from 'ng2-currency-mask';
     SelectButtonModule,
     DropdownModule,
 
-    CurrencyMaskModule
+    CurrencyMaskModule,
+
+    LancamentosRoutingModule
   ],
   declarations: [
     LancamentoCadastroComponent,
