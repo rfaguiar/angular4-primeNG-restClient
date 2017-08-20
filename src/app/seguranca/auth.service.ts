@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment.prod';
 import { JwtHelper } from 'angular2-jwt';
 import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
@@ -7,7 +8,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class AuthService {
 
-  oauthTokenUrl = 'http://localhost:8080/oauth/token';
+  oauthTokenUrl: string;
   jwtPayload: any;
 
   constructor(
@@ -15,6 +16,7 @@ export class AuthService {
     private jwtHelper: JwtHelper
   ) {
     this.carregarToken();
+    this.oauthTokenUrl = `${environment.apiUrl}/oauth/token`;
    }
 
   login(usuario: string, senha: string): Promise<void> {
