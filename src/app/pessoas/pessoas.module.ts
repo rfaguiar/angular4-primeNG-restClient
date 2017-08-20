@@ -29,9 +29,6 @@ import {TooltipModule} from 'primeng/components/tooltip/tooltip';
     PessoaCadastroComponent,
     PessoasPesquisaComponent
   ],
-  exports: [
-    PessoaCadastroComponent,
-    PessoasPesquisaComponent
-  ]
+  exports: []
 })
 export class PessoasModule { }
