@@ -10,7 +10,4 @@ export class NavbarComponent {
 
   constructor( private auth: AuthService) { }
 
-  criarNovoAccessToken() {
-    this.auth.obterNovoAccessToken();
-  }
 }
