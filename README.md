@@ -1,7 +1,7 @@
 # AlgamoneyUi
 
-[App on heroku(https://algamoney-angular-rf.herokuapp.com/)
-[Backend of app](https://github.com/rfaguiar/restApi-angular2-SpringBoot)
+[App on heroku](https://algamoney-angular-rf.herokuapp.com/)  
+[Backend of app](https://github.com/rfaguiar/restApi-angular2-SpringBoot)  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
